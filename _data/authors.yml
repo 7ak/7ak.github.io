@@ -1,0 +1,14 @@
+# Authors
+
+Alexey Khvatov:
+  name: Alexey Khvatov
+  picture: /images/bio-photo.jpg
+  links:
+    - title: Github
+      url: https://github.com/7ak
+      icon: fab fa-github-square
+
+Cornelius Fiddlebone:
+  name: Cornelius Fiddlebone
+  picture: /images/bio-photo.jpg
+  twitter: corneliusfiddlebone

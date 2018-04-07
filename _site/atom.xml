@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-06T04:31:31+03:00</updated><id>http://localhost:4000/</id><title type="html">inside</title><subtitle>description</subtitle><author><name>Alexey Khvatov</name><email>spam4only@gmail.com</email></author><entry><title type="html">Jekyll + MarkDown how to</title><link href="http://localhost:4000/how2/to-do/" rel="alternate" type="text/html" title="Jekyll + MarkDown how to" /><published>2018-04-06T00:00:00+03:00</published><updated>2018-04-06T00:00:00+03:00</updated><id>http://localhost:4000/how2/to-do</id><content type="html" xml:base="http://localhost:4000/how2/to-do/">&lt;h1 id=&quot;jekyll--markdown-how-to&quot;&gt;Jekyll + MarkDown how to:&lt;/h1&gt;
+
+&lt;p&gt;EMOJI
+https://gist.github.com/rxaviers/7360908&lt;/p&gt;
+
+&lt;p&gt;TAGGING
+http://longqian.me/2017/02/09/github-jekyll-tag/&lt;/p&gt;
+
+&lt;p&gt;MD CS
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/p&gt;</content><author><name>Alexey Khvatov</name><email>spam4only@gmail.com</email></author><category term="jekyll" /><summary type="html">This script is spawn binary and text configuration file and send it to any email address via GMAIL SMTP server.</summary></entry><entry><title type="html">Essential MikroTik™ scripts #1 :squirrel:</title><link href="http://localhost:4000/how2/mikrotik-backup2email-script/" rel="alternate" type="text/html" title="Essential MikroTik™ scripts #1 :squirrel:" /><published>2018-04-06T00:00:00+03:00</published><updated>2018-04-06T00:00:00+03:00</updated><id>http://localhost:4000/how2/mikrotik-backup2email-script</id><content type="html" xml:base="http://localhost:4000/how2/mikrotik-backup2email-script/">&lt;p&gt;Essential MikroTik�~D� scripts #1 :srel:&lt;/p&gt;
+
+&lt;p&gt;This script is spawn binary and text configuration file and send it to any email address via GMAIL SMTP server. To achieve it you need 2 steps.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Register separate gmail account and Allow less secure apps at GMail account settings&lt;/li&gt;
+  &lt;li&gt;Paste MikroTik script to RouterOS, change user variables and run it  :+1:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;comments&quot;&gt;Comments&lt;/h4&gt;
+&lt;p&gt;Register your new gmail account and go to My Account &amp;gt; Sign-in &amp;amp; security &amp;gt; Apps with account access and switch ON “Allow less secure apps”: &lt;a href=&quot;https://myaccount.google.com/security?utm_source=OGB&amp;amp;utm_medium=act#connectedapps&quot;&gt;myaccount.google.com/security?utm_source=OGB&amp;amp;utm_medium=act#connectedapps&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This script is undisruptive to your /tool e-mail settings. You can use it on any RouterOS with Internet access, without unexpected changes in your configuration.&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/log warning &quot;backup_to_EMail is running&quot;
+
+&lt;span class=&quot;gh&quot;&gt;# Don't forget to switch ON &quot;Allow less secure apps&quot; at &lt;/span&gt;
+&lt;span class=&quot;gh&quot;&gt;# GMail &amp;gt; My Account &amp;gt; Sign-in &amp;amp; security &amp;gt; Apps with account access&lt;/span&gt;
+&lt;span class=&quot;gh&quot;&gt;# https://myaccount.google.com/security?utm_source=OGB&amp;amp;utm_medium=act#connectedapps&lt;/span&gt;
+
+&lt;span class=&quot;gh&quot;&gt;# GMail full address and password:&lt;/span&gt;
+:local eAddress &quot;GMailAddress&quot;
+:local ePasswd &quot;yourPassword&quot;
+
+&lt;span class=&quot;gh&quot;&gt;# Send backup to this email:&lt;/span&gt;
+:local eMail &quot;anyEMailAddress&quot;
+
+&lt;span class=&quot;gh&quot;&gt;#Binary and text configuration file names: &lt;/span&gt;
+:local BC &quot;bin_conf.backup&quot;
+:local TC &quot;text_conf.rsc&quot;
+
+&lt;span class=&quot;gh&quot;&gt;# BEGIN&lt;/span&gt;
+:local cAddress &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/tool e-mail get address&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+:local cPort &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/tool e-mail get port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+:local cTLS &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/tool e-mail get start-tls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+:local cFrom &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/tool e-mail get from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; 
+:local cUser &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/tool e-mail get user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+:local cPasswd &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/tool e-mail get password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+/tool e-mail set address=smtp.gmail.com port=587 start-tls=yes &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+from=$eAddress user=$eAddress password=$ePasswd
+
+/system backup save name=$BC
+/export file=$TC
+/tool e-mail send file=($TC,$BC) to=$eMail &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+subject=&quot;$&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/system identity get name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; Mikrotik backup&quot; &lt;span class=&quot;se&quot;&gt;\ &lt;/span&gt;
+body=&quot;$&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/system identity get name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; backup from $&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/system clock get date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+at $&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;/system clock get time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; o'clock&quot;
+
+/tool e-mail set address=$cAddress port=$cPort start-tls=$cTLS &lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;
+from=$cFrom user=$cUser password=$cPasswd
+&lt;span class=&quot;gh&quot;&gt;# END&lt;/span&gt;
+
+/log warning &quot;backup_to_EMail is done&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Alexey Khvatov</name><email>spam4only@gmail.com</email></author><category term="mikrotik" /><category term="routeros" /><category term="backup" /><category term="email" /><category term="script" /><summary type="html">This script is spawn binary and text configuration file and send it to any email address via GMAIL SMTP server.</summary></entry></feed>

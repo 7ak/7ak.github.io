@@ -1,0 +1,26 @@
+var store = [{
+        "title": "Chocolate Chip Cookies",
+        "excerpt":"A chocolate chip cookie is a drop cookie that originated in the United States and features chocolate chips as its distinguishing ingredient. The traditional recipe combines a dough composed of butter and both brown and white sugar with semi-sweet chocolate chips. Variations include recipes with other types of chocolate as...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/links/chocolate-chip-cookies/"
+      },{
+        "title": "Oatmeal Cookies",
+        "excerpt":"Oatmeal cookies are a proverbial favorite with both kids and adults. This crisp and chewy cookie is loaded with oats, dried fruit, and chopped nuts. Ingredients 1 cup butter, softened 1 cup white sugar 1 cup packed brown sugar 2 eggs 1 teaspoon vanilla extract 2 cups all-purpose flour 1...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/links/oatmeal-cookies/"
+      },{
+        "title": "Peanut Butter Cookies",
+        "excerpt":"A peanut butter cookie is a type of cookie that is distinguished for having peanut butter as a principal ingredient. The cookie generally originated in the United States, its development dating back to the 1910s. Ingredients 1 cup unsalted butter 1 cup crunchy peanut butter 1 cup white sugar 1...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/links/peanut-butter-cookies/"
+      },{
+        "title": "Essential MikroTik™ scripts #1 :squirrel:",
+        "excerpt":"Essential MikroTik�~D� scripts #1 :srel: This script is spawn binary and text configuration file and send it to any email address via GMAIL SMTP server. To achieve it you need 2 steps. Register separate gmail account and Allow less secure apps at GMail account settings Paste MikroTik script to RouterOS,...","categories": ["how2"],
+        "tags": ["mikrotik","routeros","backup","email","script"],
+        "url": "http://localhost:4000/how2/mikrotik-backup2email-script/"
+      },{
+        "title": "Jekyll + MarkDown how to",
+        "excerpt":"Jekyll + MarkDown how to: EMOJIhttps://gist.github.com/rxaviers/7360908 TAGGINGhttp://longqian.me/2017/02/09/github-jekyll-tag/ MD CShttps://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet ","categories": ["how2"],
+        "tags": ["jekyll"],
+        "url": "http://localhost:4000/how2/to-do/"
+      }]
