@@ -11,7 +11,7 @@ tags:
   - script
 ---
 Essential MikroTik�~D� scripts #1 :srel:
-
+:squirrel:
 This script is spawn binary and text configuration file and send it to any email address via GMAIL SMTP server. To achieve it you need 2 steps.
 - Register separate gmail account and Allow less secure apps at GMail account settings
 - Paste MikroTik script to RouterOS, change user variables and run it  :+1: 
