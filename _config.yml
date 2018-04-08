@@ -74,13 +74,17 @@ exclude:
   - vendor/ruby/
 
 plugins:
+  - github-pages
+  - jemoji
+  - jekyll-gist
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
   - jekyll-redirect-from
   - jekyll-remote-theme
-
+  - jekyll-avatar
+  
 # Collections
 collections:
   links:
