@@ -18,8 +18,8 @@
 remote_theme: mmistakes/so-simple-theme
 
 locale: "en_US.UTF-8"
-title: "inside"
-description: "description"
+title: "AKaBit"
+description: "Aleksey Khvatov another Blog it"
 #baseurl: "/srv"
 #url: "http://localhost:4000"
 url: "https://7ak.github.io"
