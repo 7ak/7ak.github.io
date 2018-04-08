@@ -22,7 +22,7 @@ title: "inside"
 description: "description"
 #baseurl: "/srv"
 #url: "http://localhost:4000"
-url: "http://7ak.github.io"
+url: "https://7ak.github.io"
 logo: "/images/so-simple-site-logo.png"
 date_format: "%B %-d, %Y"
 read_time: true
